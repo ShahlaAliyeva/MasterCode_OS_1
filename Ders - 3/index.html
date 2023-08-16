@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Personal Data</legend>
+        <label for="">
+          Name:
+          <input type="text" placeholder="Aytac" autofocus maxlength="5" />
+        </label>
+        <br /><br />
+
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="off"
+          /> </label
+        ><br /><br />
+
+        <label for="">
+          Password
+          <input type="password" required />
+        </label>
+        <br /><br />
+
+        <!-- <input type="submit" value="Tesdiq et"> -->
+        <button type="submit">Testiq et</button>
+        <button type="reset">Yenile</button>
+      </fieldset>
+      <br /><br />
+
+      <label for="gender">
+        Gender:
+        <label for="">
+          Female
+          <input type="radio" name="gender" />
+        </label>
+
+        <label for="">
+          Male
+          <input type="radio" name="gender" />
+        </label> </label
+      ><br /><br />
+
+      <label for="">
+        Hobbies:
+        <label for="">
+          <input type="checkbox" name="hobby" />
+          Sport
+        </label>
+
+        <label for="">
+          <input type="checkbox" name="hobby" checked />
+          Music
+        </label>
+
+        <label for="">
+          <input type="checkbox" name="hobby" />
+          Dance
+        </label> </label
+      ><br /><br />
+
+      <label for="">
+        Fayl secin:
+        <input type="file" accept="image/*" multiple /> </label
+      ><br /><br />
+
+      <input type="datetime-local" />
+      <input type="tel" />
+      <input type="color" />
+      <input type="range" max="100" step="20" />
+      <br /><br />
+
+      <select name="development" id="">
+        <optgroup label="Frontend">
+          <option value="html">html</option>
+          <option value="css">css</option>
+          <option value="js" selected>js</option>
+        </optgroup>
+
+       <optgroup label="Backend">
+        <option value="node">node.js</option>
+        <option value="django">django</option>
+        <option value="js">js</option>
+       </optgroup>
+      </select><br><br>
+
+      <label for="message">
+        Write your message
+        <br>
+        <textarea name="" id="" cols="50" rows="5" style="resize: none;"></textarea>
+      </label>
+    </form>
+  </body>
+</html>
