@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* width: 700px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../images/pexels-yogendra-singh-3971608.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(44, 135, 239);
+    background-blend-mode: multiply; */
+
+   
+}
+/* 
+.img-container img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+} */
+
+/* label, input {
+    display: block;
+    padding: 20px;
+    margin: 20px;
+} */
+
+/* .changed-div {
+    background-color: cornflowerblue;
+    display: inline-block;
+    width: 40%;
+    height: 100px;
+} */
+
+
+header {
+    padding: 20px 100px;
+    background-color: #252B42;
+}
+
+header ul {
+    width: fit-content;
+    margin: 10px auto;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Main side */
+
+main {
+    padding: 20px 150px 20px 200px;
+    background-color: #95aaff;
+    height: 650px;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* display: none; */
+}
+
+.main-content-side, .img-container{
+    display: inline-block;
+}
+
+.main-content-side {
+    float: left;
+    color: aliceblue;
+}
+
+.img-container {
+    float: right;
+}
+
+/* Form styling */
+
+.second {
+    color: #d86244;
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[name='ad'] {
+    color: #d86244;
+    border: 1px solid #d86244;
+    outline: none;
+}
+
+input[name='ad']::placeholder {
+    color: #d86244;
+    opacity: .5;
+}
+
+button[type='submit'] {
+    background-color: #d86244;
+    border: 1px solid #853f2e;
+    padding: 10px 13px;
+}
