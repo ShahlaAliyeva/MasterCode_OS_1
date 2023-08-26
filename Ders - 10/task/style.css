@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header{
+    background-color: aqua;
+}
+
+header, footer {
+    height: 40px;
+}
+
+section {
+    display: flex;
+    /* justify-content: space-between; */
+    height: calc(100% - 80px);
+}
+
+section aside, section article {
+    width: 20%;
+    background-color: #959595;
+}
+
+section main {
+    width: 60%;
+    background-color: orange;
+}
+
+footer {
+    background-color: green;
+}
