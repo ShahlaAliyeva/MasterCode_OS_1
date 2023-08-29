@@ -1,0 +1,139 @@
+/* button {
+  width: 100px;
+  height: 50px;
+  background-color: darkolivegreen;
+  color: beige;
+  cursor: pointer;
+  border: 1px solid darkolivegreen;
+
+  transition-property: all;
+  transition-duration: 3s;
+  transition-delay: 2s;
+  transition-timing-function: linear;
+}
+
+button:hover {
+  background-color: darkgoldenrod;
+  color: rgb(54, 49, 30);
+} */
+
+/* Transform: 
+scale() => elementin olcusunu deyisir
+translate() => elementi x ve y oxu uzre herket etdirir
+ rotate() => elementi firlatmaq ucun
+  */
+
+.transform-box {
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+  margin: 100px auto;
+  transition: transform 1s ease-in;
+}
+
+.transform-box:hover {
+  /* transform: scale(2, 0.5); */
+  /* transform: translate(200px, 300px); */
+  transform: rotate(2turn);
+}
+
+/* Transform Example */
+
+.animated-btn {
+  width: 150px;
+  height: 60px;
+  background-color: transparent;
+  color: darkolivegreen;
+  cursor: pointer;
+  border: 3px solid darkolivegreen;
+  position: relative;
+  transition: color 0.5s ease-in;
+  overflow: hidden;
+}
+
+.animated-btn:hover {
+  color: beige;
+}
+
+.animated-btn::before {
+  content: "";
+  width: 145px;
+  height: 55px;
+  background-color: darkolivegreen;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  transition: transform 0.5s ease-in;
+  z-index: -1;
+}
+
+.animated-btn:hover::before {
+  transform: rotate(0);
+}
+
+/* Owerflow */
+
+/* p {
+    height: 600px;
+    width: 200px;
+    overflow-x: hidden;
+} */
+
+/* Animations */
+
+.animated-div {
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+  transition: transform 1s ease-in;
+
+  animation-name: move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  margin-bottom: 40px;
+}
+
+/* @keyframes move {
+    0% {
+        transform: translate(-100%);
+    }
+
+    100% {
+        transform: translate(1000%);
+    }
+} */
+
+/* Pseudo classes examples */
+
+a {
+    text-decoration: none;
+    color: rgb(21, 0, 41);
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+ul {
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 30px;
+    padding: 5px 20px;
+}
+
+ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* ul li:not(:first-child){
+    margin-left: 30px;
+} */
