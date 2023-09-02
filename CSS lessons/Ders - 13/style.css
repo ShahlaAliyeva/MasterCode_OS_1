@@ -1,0 +1,82 @@
+.container {
+    display: grid;
+    height: 20rem;
+    grid-template-areas: 
+    "first first second second third third" 
+    "first first forth fifth sixth sixth";
+
+    /* grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    gap: .3rem;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2rem;
+}
+
+.box:nth-child(1) {
+    grid-area: first;
+    background-color: bisque;
+
+    /* grid-column: 1 / span 2;
+    grid-row: 1 / span 2; */
+}
+
+.box:nth-child(2) {
+    grid-area: second;
+    background-color: rgb(235, 255, 123);
+
+    /* grid-column: 3 / span 2; */
+}
+
+.box:nth-child(3) {
+    grid-area: third;
+    background-color: coral;
+
+    /* grid-column: 5 / span 2; */
+}
+
+.box:nth-child(4) {
+    grid-area: forth;
+    background-color: cadetblue;
+}
+
+.box:nth-child(5) {
+    grid-area: fifth;
+    background-color: rgb(179, 0, 199);
+
+}
+
+.box:nth-child(6) {
+    background-color: rgb(245, 133, 161);
+    grid-area: sixth;
+/* 
+    grid-column: 5 / -1; */
+}
+
+
+/* Shadows */
+
+.div-shadowed {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+
+    box-shadow: 0px 5px 7px -1px rgb(43, 86, 87);
+}
+
+img {
+    display: block;
+    margin: 1rem auto;
+    width: 100px;
+
+    filter: drop-shadow(7px 5px 5px rgb(0, 59, 60));
+}
+
+h1 {
+    color: cadetblue;
+    text-shadow: 5px 7px 7px rgb(33, 66, 68);
+}
