@@ -1,0 +1,9 @@
+/* Sibling Selectors
+~ (General sibling)
++ (Adjacent Sibling) => bitisik, qonsu teg
+ */
+
+ p + span {
+    color: rgb(202, 72, 228);
+    background-color: yellow;
+ }
