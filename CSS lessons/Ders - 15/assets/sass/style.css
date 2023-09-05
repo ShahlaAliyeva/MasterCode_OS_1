@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: rgba(255, 34, 255, 0.1333333333);
+  background-color: beige;
+}
+
+.container {
+  background-color: rgb(247, 216, 175);
+  height: 40rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container .box {
+  height: 6rem;
+  width: 6rem;
+  background-color: cadetblue;
+  margin: 1rem;
+  transition: all 0.4s ease-in;
+}
+.container .box:hover {
+  cursor: pointer;
+  background-color: rgb(143, 185, 186);
+}
+
+@media (max-width: 768px) {
+  .container {
+    background-color: rgba(0, 0, 255, 0.893);
+    flex-wrap: wrap;
+  }
+  .container .box {
+    background-color: #fff;
+  }
+}
+button.btn {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  background-color: rgba(201, 242, 255, 0.549);
+  transition: all 0.4s ease-in;
+}
+button.btn:hover {
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: rgba(0, 0, 255, 0.893);
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  background-color: rgba(201, 242, 255, 0.549);
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
