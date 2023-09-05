@@ -1,0 +1,22 @@
+button.btn {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  background-color: map-get($buttons, "btn");
+  transition: all 0.4s ease-in;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn.btn-primary {
+  background-color: map-get($buttons, "btn-primary");
+  color: map-get($buttons, "--text-color-white");
+
+  &:hover {
+    background-color: map-get($buttons, "btn");
+    color: map-get($buttons, "--text-color-dark");
+  }
+}
