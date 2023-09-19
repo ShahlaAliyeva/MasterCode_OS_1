@@ -1,0 +1,72 @@
+:root {
+    /* Button backgrounds */
+    --btn-bg-default: #fff;
+    --btn-bg-secondary: #979797;
+    --btn-bg-primary: #2f70ac;
+    --btn-bg-info: #d7fc21;
+    --btn-bg-danger: #ac2f2f;
+    --btn-bg-success: #007a2b;
+
+    /* Button text colors */
+    --btn-text-white: #fff;
+    --btn-text-black: #272727;
+
+    /* Hovered bg-colors */
+    --btn-bg-hovered-success: #00561e;
+}
+
+.btn {
+    padding: 10px;
+    background-color: var(--btn-bg-default);
+    color: var(--btn-text-black);
+    border: 1px solid var(--btn-bg-secondary);
+    border-radius: 5px;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: .5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.btn-primary-default {
+    color: var(--btn-bg-primary);
+    border-color: var(--btn-bg-primary);
+}
+
+.btn.btn-primary {
+    background-color: var(--btn-bg-primary);
+    color: var(--btn-text-white);
+    border-color: var(--btn-bg-primary);
+}
+
+.btn.btn-secondary {
+    background-color: var(--btn-bg-secondary);
+}
+
+.btn.btn-info {
+    background-color: var(--btn-bg-info);
+    border-color: var(--btn-bg-info);
+}
+
+
+.btn.btn-danger {
+    background-color: var(--btn-bg-danger);
+    border-color: var(--btn-bg-danger);
+    color: var(--btn-text-white);
+}
+
+.btn.btn-success {
+    background-color: var(--btn-bg-success);
+    border-color: var(--btn-bg-success);
+    color: var(--btn-text-white);
+}
+
+.btn.btn-success:hover {
+    background-color: var(--btn-bg-hovered-success);
+}

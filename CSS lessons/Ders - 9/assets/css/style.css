@@ -8,35 +8,35 @@ body {
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 /* CSS Units : em, rem, px, vh, vw */
 
 .first {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .second {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .third {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .changed-div {
-    font-size: 8px;
+  font-size: 8px;
 }
 
 .changed-div p {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .changed-div p::first-letter {
-    color: red;
-    font-size: 3rem;
-    font-weight: bold;
+  color: red;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 /* CSS Gradients: linear, radial */
@@ -50,91 +50,90 @@ html {
     rgba(253, 187, 45, 1) 100%
   );
 
-/* background: #BD0BBD;
+  /* background: #BD0BBD;
 background-image: radial-gradient(at right top, #BD0BBD, #41C5B1); */
 }
-
 
 /* CSS Positions: relative absolute sticky fixed */
 
 .box {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid black;
 }
 
 .red-box {
-    background-color: red;
-    position: absolute;
-    top: 0;
-    left: 0;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .green-box {
-    background-color: green;
-    position: relative;
-    top: 40px;
-    left: 20px;
+  background-color: green;
+  position: relative;
+  top: 40px;
+  left: 20px;
 }
 
 .yellow-box {
-    background-color: yellow;
-    position: fixed;
-    top: 20px;
-    left: 40px;
+  background-color: yellow;
+  position: fixed;
+  top: 20px;
+  left: 40px;
 }
 
 .blue-box {
-    background-color: rgb(88, 88, 239);
-    position: sticky;
-    bottom: 0;
+  background-color: rgb(88, 88, 239);
+  position: sticky;
+  bottom: 0;
 }
 
 /* Burger Menu with pseudo element */
 /* Pseudo element: ::before ::after */
 
 .burger-menu {
-    width: 50px;
-    height: 10px;
-    background-color: yellowgreen;
-    position: relative;
-    margin: 20px;
+  width: 50px;
+  height: 10px;
+  background-color: yellowgreen;
+  position: relative;
+  margin: 20px;
 }
 
-.burger-menu::before{
-    content: '';
-    display: block;
-    width: 50px;
-    height: 10px;
-    background-color: yellowgreen;
-    position: absolute;
-    top: 15px;
+.burger-menu::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 10px;
+  background-color: yellowgreen;
+  position: absolute;
+  top: 15px;
 }
 
 .burger-menu::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 10px;
-    background-color: yellowgreen;
-    position: absolute;
-    top: 30px;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 10px;
+  background-color: yellowgreen;
+  position: absolute;
+  top: 30px;
 }
 
 /* Pseudo classes */
 
 a {
-    color: darkslategray;
-    text-decoration: none;
-    font-size: 2rem;
+  color: darkslategray;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 a:visited {
-    color: palevioletred;
+  color: palevioletred;
 }
 
 a:hover {
-    color: yellowgreen;
-    text-decoration: underline;
+  color: yellowgreen;
+  text-decoration: underline;
 }
