@@ -78,7 +78,7 @@
 // console.log('----------------------------------------------');
 
 
-//! Get data from user -> alert, prompt, confirm
+//! Get data from user -> alert, prompt, confirm 
 
 //? 1. alert
 
@@ -119,4 +119,3 @@ if(age ==20) {
 } else {
     console.log('Duz deyil!');
 }
-
