@@ -140,7 +140,29 @@ function getWords(text) {
 
 function mostFrequentWord(text) {
   let frequency = {};
-  let wordsArray = getWords(text.tolowerCase());
+  let wordsArray = getWords(text.toLowerCase());
+  let maxFrequency = 0;
+  let mostFrequentWord;
+
+  for(let i = 0; i < wordsArray.length; i++) {
+    if(wordsArray[i] in frequency) {
+      frequency[wordsArray[i]] += 1
+    } else {
+      frequency[wordsArray[i]] = 1
+    }
+  }
+
+  for(let i = 0; i < wordsArray.length; i++){
+    let currentWord = wordsArray[i];
+    let currentFrequency = frequency[currentWord]
+
+    if(maxFrequency < currentFrequency) {
+      maxFrequency = currentFrequency
+      mostFrequentWord = currentWord
+    }
+  }
+
+  return mostFrequentWord
 }
 
 /* 8.
@@ -149,9 +171,9 @@ function mostFrequentWord(text) {
  */
 
 function addStrings(num1, num2) {
-  // kodunuzu burada yazın
+  return +num1 + +num2;
 }
 
-// console.log(addStrings("1", "2")); // '3'
-// console.log(addStrings("11", "123")); // '134'
-// console.log(addStrings("456", "77")); // '533'
+console.log(addStrings("1", "2")); // '3'
+console.log(addStrings("11", "123")); // '134'
+console.log(addStrings("456", "77")); // '533'
