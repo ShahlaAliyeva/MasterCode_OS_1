@@ -1,0 +1,16 @@
+.btn {
+    border-radius: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input[name="user"] {
+    color: brown;
+    border: 2px solid brown;
+    border-radius: .4em;
+    background-color: rgb(254, 250, 250);
+}
+
+input[name="user"]::placeholder {
+    color: brown;
+}
