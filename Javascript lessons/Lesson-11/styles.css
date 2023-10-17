@@ -1,0 +1,50 @@
+button {
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+p {
+    cursor: pointer;
+}
+
+
+.container {
+    padding: 10px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: beige;
+    border: 2px solid rgb(234, 155, 155);
+    cursor: pointer;
+}
+
+/* .box:hover .container {
+    background-color: darkcyan;
+} */
+
+
+ul{ 
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+    border: 2px solid black;
+}
+
+li {
+    list-style: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.active {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: rgb(195, 16, 0);
+}
+
+.hidden {
+    display: none;
+}
