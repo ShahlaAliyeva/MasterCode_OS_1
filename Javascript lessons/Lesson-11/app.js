@@ -40,7 +40,7 @@ let button = document.querySelector("button"),
 //     paragraph.innerHTML = `<i>${e.target.value}</i>`
 // } );
 
-//! mouse up & mouseout & mouseleave events
+//! mouse over & mouseout & mouseleave events
 
 // secondBox.addEventListener('mouseover', function(e) {
 //     secondBox.parentElement.style.backgroundColor = 'darkcyan'
