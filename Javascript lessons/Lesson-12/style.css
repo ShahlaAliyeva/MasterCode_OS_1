@@ -1,0 +1,14 @@
+.box {
+    width: 10em;
+    height: 10em;
+    background-color: darkcyan;
+    font-weight: 600;
+    margin: 1em;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+form {
+    margin: 1em;
+    /* display: inline; */
+}
