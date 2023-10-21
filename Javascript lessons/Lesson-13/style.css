@@ -1,0 +1,24 @@
+
+/* p {
+    color: red;
+    font-weight: 500;
+    opacity: 1;
+} */
+
+p.hidden {
+    opacity: 0;
+}
+
+.own-list li {
+    color: coral;
+    font-weight: 700;
+    list-style-type: circle;
+    cursor: pointer;
+}
+
+.js-list li {
+    color: darkcyan;
+    font-weight: 700;
+    list-style-type: square;
+    cursor: pointer;
+}
