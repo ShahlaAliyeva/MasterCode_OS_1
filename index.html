@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <header class="container header">
+      <h1 class="header__content">TODO</h1>
+      <ion-icon class="header__icon" name="moon-sharp"></ion-icon>
+    </header>
+
+    <section class="container input__section">
+      <form class="input__section__form">
+        <input
+          class="input__section__form-input"
+          type="text"
+          placeholder="Create a new todo…"
+        />
+      </form>
+    </section>
+
+    <section class="container todos__section">
+      <ul class="todos__section__list">
+        <!-- <li class="todos__section__list__item">
+          <div class="todos__section__list__item-checkbox checked">
+            <img src="./images/checked.svg" alt="" />
+          </div>
+
+          <p class="todos__section__list__item-text">
+            Complete online JavaScript course
+          </p>
+        </li> -->
+
+        <li class="todos__section__list__item hidden">
+          <p><span class="todos__section__list__item--count">1</span> items left</p>
+          <div class="todos__section__list__item--filter">
+            <span class="active">All</span>
+            <span>Active</span>
+            <span>Completed</span>
+          </div>
+
+          <p class="todos__section__list__item--clear-todos">Clear completed</p>
+        </li>
+      </ul>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
