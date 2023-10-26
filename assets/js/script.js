@@ -9,25 +9,37 @@ const todoItemCheckbox = document.querySelector(
   ".todos__section__list__item-checkbox"
 );
 
-let listItems = [];
-let countOfTodos = 0;
+let allTodos = JSON.parse(localStorage.getItem("todos")) || [];
+console.log(allTodos);
+
+if (allTodos.length > 0) {
+  allTodos.forEach((todo) => {
+    let listItem = createTodo(todo.todoContent, todo.id);
+    todosList.insertAdjacentHTML("afterbegin", listItem);
+  });
+}
+
+let listItems = [...allTodos];
+let countOfTodos = allTodos.length; //4
+
+toggleFilterside(listItems, countOfTodos);
 
 todosForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  countOfTodos++;
+  countOfTodos++; //5
 
   let listItem = createTodo(todoInput.value, countOfTodos);
   todosList.insertAdjacentHTML("afterbegin", listItem);
+  //! Local storage
+  listItems.push({
+    id: countOfTodos,
+    todoContent: todoInput.value,
+    isCompeted: false,
+  });
+
+  localStorage.setItem("todos", JSON.stringify(listItems));
   todoInput.value = "";
-  listItems.push({ id: countOfTodos, listItem });
-
-  todoLastItem.firstElementChild.firstElementChild.textContent = countOfTodos;
-
-  if (listItems.length !== 0) {
-    todoLastItem.classList.remove("hidden");
-  } else {
-    todoLastItem.classList.add("hidden");
-  }
+  toggleFilterside(listItems, countOfTodos);
 });
 
 function getElement(element) {
@@ -64,4 +76,14 @@ function createTodo(inputValue, todoID) {
         </p>
     </li>
     `;
+}
+
+function toggleFilterside(todos, todosLength) {
+  todoLastItem.firstElementChild.firstElementChild.textContent = todosLength;
+
+  if (todos.length !== 0) {
+    todoLastItem.classList.remove("hidden");
+  } else {
+    todoLastItem.classList.add("hidden");
+  }
 }
