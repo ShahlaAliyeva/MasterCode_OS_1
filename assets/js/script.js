@@ -10,7 +10,6 @@ const todoItemCheckbox = document.querySelector(
 );
 
 let allTodos = JSON.parse(localStorage.getItem("todos")) || [];
-console.log(allTodos);
 
 if (allTodos.length > 0) {
   allTodos.forEach((todo) => {
