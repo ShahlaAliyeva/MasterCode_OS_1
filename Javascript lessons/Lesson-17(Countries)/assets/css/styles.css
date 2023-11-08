@@ -11,7 +11,19 @@
   --text-color: #111517;
   --searcing-icon-color: #848484;
   --input-color: hsl(0, 0%, 52%);
+  --input-placeholder: hsl(0, 0%, 52%);
   --input-bg-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --button-shadow-color: rgba(0, 0, 0, 0.29);
+}
+
+:root > .dark-theme {
+  --bg-color: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+  --searcing-icon-color: #848484;
+  --input-color: hsl(0, 0%, 98%);
+  --input-placeholder: hsl(0, 0%, 75%);
+  --input-bg-color: hsl(209, 23%, 22%);
   --shadow-color: rgba(0, 0, 0, 0.05);
   --button-shadow-color: rgba(0, 0, 0, 0.29);
 }
@@ -19,6 +31,7 @@
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: var(--bg-color);
+  transition: all 0.2s ease-in-out;
 }
 
 a {
@@ -63,14 +76,11 @@ li {
 
   .header-theme-changer {
     width: 7%;
+    cursor: pointer;
 
     > span {
       font-size: 0.9rem;
       font-weight: 600;
-    }
-
-    .theme-changer-icon:hover {
-      cursor: pointer;
     }
   }
 }
@@ -104,6 +114,10 @@ li {
         color: var(--input-color);
         font-size: 0.875rem;
       }
+
+      > input::placeholder {
+        color: var(--input-placeholder);
+      }
     }
   }
 
@@ -114,6 +128,7 @@ li {
     font-size: 0.875rem;
     font-weight: 400;
     position: relative;
+    color: var(--text-color);
 
     > .filter-selected {
       padding: 1.1rem 1.4rem;
@@ -134,7 +149,7 @@ li {
       box-shadow: 0px 2px 9px 0px var(--shadow-color);
       opacity: 0;
       position: absolute;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
 
       > .filter-option {
         padding: 0.2rem 0;
@@ -166,9 +181,9 @@ li {
     width: 16.5rem;
     height: 20rem;
     border-radius: 0.2rem;
-    background: #fff;
+    background-color: var(--input-bg-color);
     box-shadow: 0px 0px 7px 2px var(--shadow-color);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     .card-img-container {
       height: 50%;
@@ -206,4 +221,3 @@ li {
     transform: scale(1.03);
   }
 }
-

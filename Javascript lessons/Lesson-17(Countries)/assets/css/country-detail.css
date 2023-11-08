@@ -8,7 +8,7 @@
 .navigate-section-container {
   margin: 4rem 0;
 
-  > button {
+  > a {
     width: 6.5rem;
     height: 2rem;
     display: flex;
@@ -23,6 +23,7 @@
 }
 
 .country-detail-container {
+  color: var(--text-color);
   .country-img-container {
     width: 34.98219rem;
     height: 26rem;
@@ -78,9 +79,10 @@
         flex-wrap: wrap;
         width: 70%;
 
-        > button {
+        > a {
           width: 6.5rem;
-          height: 2rem;
+          padding: 0.2rem;
+          text-align: center;
           display: flex;
           align-items: center;
           justify-content: center;
