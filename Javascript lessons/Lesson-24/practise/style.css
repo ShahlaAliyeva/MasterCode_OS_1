@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  padding: 1rem;
+}
+
+.form-container form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+
+  > input {
+    flex-grow: 1;
+    padding: 0.4rem;
+  }
+
+  > button {
+    display: flex;
+    padding: 0.4rem;
+    cursor: pointer;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 95%;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.user-card {
+  background-color: darkgray;
+  height: 10rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  transition: all .4s linear;
+}
+
+.user-card:hover {
+    transform: scale(1.05);
+}
