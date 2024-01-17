@@ -1,0 +1,13 @@
+.card__skill{
+  background-color: red;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 2px solid blue;
+  color: white;
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+}

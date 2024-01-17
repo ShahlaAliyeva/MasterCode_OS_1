@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  color: #000;
+}
+
+.container {
+  margin: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25%;
+  border: 2px solid #000;
+  border-radius: 0.4rem;
+}
+
+.card__img__container img {
+  width: 100%;
+  height: 13rem;
+  object-position: center;
+  object-fit: cover;
+}
+
+.card__content {
+  width: 85%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card__title {
+  letter-spacing: 0.2rem;
+}
+
+.card__description {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.card__skills__container {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.card__skill {
+  background-color: chocolate;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 2px solid #000;
+}
